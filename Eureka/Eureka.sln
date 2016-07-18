@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eureka", "Eureka\Eureka.csproj", "{77CFE0C0-96D6-4C8F-A52A-30DF034A4E96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eureka.Web", "Eureka\Eureka.Web.csproj", "{77CFE0C0-96D6-4C8F-A52A-30DF034A4E96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eureka.Domain", "Eureka.Domain\Eureka.Domain.csproj", "{CC02271B-ECDC-43D6-8FFD-386BC74AF177}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eureka.Infra", "Eureka.Infra\Eureka.Infra.csproj", "{D27321C7-1BF8-4DA1-951D-2911604AB889}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{77CFE0C0-96D6-4C8F-A52A-30DF034A4E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77CFE0C0-96D6-4C8F-A52A-30DF034A4E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77CFE0C0-96D6-4C8F-A52A-30DF034A4E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC02271B-ECDC-43D6-8FFD-386BC74AF177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC02271B-ECDC-43D6-8FFD-386BC74AF177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC02271B-ECDC-43D6-8FFD-386BC74AF177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC02271B-ECDC-43D6-8FFD-386BC74AF177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D27321C7-1BF8-4DA1-951D-2911604AB889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D27321C7-1BF8-4DA1-951D-2911604AB889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D27321C7-1BF8-4DA1-951D-2911604AB889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D27321C7-1BF8-4DA1-951D-2911604AB889}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
