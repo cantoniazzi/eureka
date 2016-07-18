@@ -279,6 +279,16 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Eureka.Domain\Eureka.Domain.csproj">
+      <Project>{cc02271b-ecdc-43d6-8ffd-386bc74af177}</Project>
+      <Name>Eureka.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Eureka.Infra\Eureka.Infra.csproj">
+      <Project>{d27321c7-1bf8-4da1-951d-2911604ab889}</Project>
+      <Name>Eureka.Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
