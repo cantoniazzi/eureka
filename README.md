@@ -1,2 +1,6 @@
 # eureka
-Projeto criado pela equipe Dell IT Academy, uma parceria entre a PUCRS e a Dell Inc, para exercitar o desenvolvimento de um projeto em time ágil composto por 11 desenvolvedores multi disciplinares.
+
+
+Ferramenta para cadastro e discussão de ideias.
+
+Projeto criado pela equipe Dell IT Academy (uma parceria entre a PUCRS e a Dell Inc), para exercitar o desenvolvimento de projetos de maneira ágil em um time multi disciplinar composto por 11 desenvolvedores.
