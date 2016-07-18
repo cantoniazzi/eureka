@@ -7,3 +7,5 @@ Projeto criado pela equipe Dell IT Academy (uma parceria entre a PUCRS e a Dell 
 
 
 ![alt tag](https://raw.githubusercontent.com/cantoniazzi/eureka/master/desk_work.jpg)
+
+![alt tag](https://raw.githubusercontent.com/cantoniazzi/eureka/master/user_story_mapping.jpg)
