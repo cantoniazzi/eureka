@@ -11,23 +11,16 @@ using System.ComponentModel.Composition;
 namespace Eureka.Infra.EntityConfiguration
 {
     [Export(typeof(IEntityConfiguration))]
-    public class IdeiaConfiguration : EntityTypeConfiguration<Ideia>, IEntityConfiguration
+    class ComentarioConfiguration : EntityTypeConfiguration<Comentario>, IEntityConfiguration
     {
-        public IdeiaConfiguration()
+        public ComentarioConfiguration()
         {
-            HasKey(i => i.IdeiaID);
+            HasKey(i => i.ComentarioID);
 
-            Property(i => i.Titulo).IsRequired().HasMaxLength(150);
-            Property(i => i.Descricao).IsRequired();
-            Property(i => i.Tag).IsOptional();
+            ToTable("Coments");
+            Property(i => i.Descricao).IsRequired().HasMaxLength(250);
             Property(i => i.Avaliacao).IsOptional();
             Property(i => i.Usuario).IsRequired();
-
-            //Ignore(i => i.Descricao);
-            //HasRequired();
-            //HasOptional
-
-            HasMany(i => i.Comentarios).WithRequired().WillCascadeOnDelete(true);
         }
 
         public void AddConfiguration(ConfigurationRegistrar registrar)

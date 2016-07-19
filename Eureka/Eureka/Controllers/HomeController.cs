@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Eureka.Infra.Context;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,13 @@ namespace Eureka.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly MyDatabase database;
+
+        public HomeController(MyDatabase database)
+        {
+            this.database = database;
+        }
+
         public ActionResult Index()
         {
             return View();

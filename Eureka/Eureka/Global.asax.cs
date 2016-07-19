@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Eureka.Infra.Context;
+using Eureka.IoC;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -16,6 +19,9 @@ namespace Eureka
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+
+            AutofacConfig.Configure();
         }
     }
 }

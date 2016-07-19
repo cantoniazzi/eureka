@@ -39,6 +39,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,7 +52,15 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Context\MyDatabase.cs" />
+    <Compile Include="EntityConfiguration\ComentarioConfiguration.cs" />
+    <Compile Include="EntityConfiguration\ContextConfiguration.cs" />
     <Compile Include="EntityConfiguration\IdeiaConfiguration.cs" />
+    <Compile Include="EntityConfiguration\IEntityConfiguration.cs" />
+    <Compile Include="Migrations\201607191401354_CreateInitialize.cs" />
+    <Compile Include="Migrations\201607191401354_CreateInitialize.Designer.cs">
+      <DependentUpon>201607191401354_CreateInitialize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +72,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201607191401354_CreateInitialize.resx">
+      <DependentUpon>201607191401354_CreateInitialize.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
