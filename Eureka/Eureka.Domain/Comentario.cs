@@ -8,7 +8,9 @@ namespace Eureka.Domain
 {
     public class Comentario
     {
+        public int ComentarioID { get; set; }
         public string Usuario { get; set; } //User.Identity.Name futuramente
-
+        public string Descricao { get; set; }
+        public int Avaliacao { get; set; }
     }
 }
