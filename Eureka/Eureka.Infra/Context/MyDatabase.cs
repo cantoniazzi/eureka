@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Eureka.Domain;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -13,6 +14,14 @@ namespace Eureka.Infra.Context
             : base("ConnectionStringName")
         {
 
+        }
+
+        public virtual IDbSet<Ideia> Ideias { get; set; }
+        public virtual IDbSet<Comentario> Comentarios { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
